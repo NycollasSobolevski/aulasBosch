@@ -1,0 +1,4 @@
+nome, nota1, nota2, nota3, média
+
+joao, 6.0
+isaquiel, 7.0

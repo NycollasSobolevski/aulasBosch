@@ -1,0 +1,4 @@
+Docker Swarm
+
+Ferramenta para cluster da Docker que antes era a parte e hoje é nativo.
+Cluster é nada mais nada menos que aglomerar diversos computadores para trabalhar em conjunto. em que cada estação e denominada de NODO e que combinadas formam o cluster. ou seja um grupo de hosts 2do docker formam um cluster Swarm quando estao em execução juntos 

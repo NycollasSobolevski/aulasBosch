@@ -1,0 +1,137 @@
+C#
+
+============================		TIPOS		===========================
+
+	Numeros
+long 	(8 Byte)
+int	(4 Byte)
+short	(2 Byte)
+byte	(1 Byte)
+ulong	(8 Byte)
+uint	(4 Byte)
+ushort	(2 Byte)
+sbyte	(1 byte)
+	
+	Numeros com virgula
+float	(4 bytes)
+duble	(2*float)(8 Bytes)
+decimal (16 Bytes)(precisão maior(dinheiro))
+
+(nao se usa duble nem float quando se trata de dinheiro)
+
+bool 	(V/F)(Boleano)
+char 	(Caracteres)
+string	(Texto)
+
+================================================================================
+
+tupla = (int; string)t;
+	t.i
+	t.s
+
+================================================================================
+
+class = cria um tipo por referencia
+struc = cria um tipo por valor
+	stack
+	heap
+================================================================================
+
+memoria:
+RAM -> L1 -> L2 -> L3 -> CPU
+
+================================================================================
+
+
+teoria dos conjuntos 
+
+nao tem ordem;
+nao tem repetição;
+nao tem index;
+
+
+a={1,2,3} == {3,2,1} == {1,1,1,1,1,1,2,3} != {1,1,1,1,1,1,2,3,4}
+2 e A = 2 pertence a A		A = {2}
+2 c A = 2 esta contido em A	A = {0,1}	(subconjunto)
+
+x c A => ∀ y e x(y e a) == "para todo y que esta contido em 'x', y esta contido em 'a'"
+
+UNIAO: 		{1,2} u {2,3} = {1,2,3}	(Or)
+INTERCECÇÃO:	{1,2} ∩ {1,2} = {2}	(AND)
+
+(a,b) = {{a,b},a}		//O 'a' é o primeiro elemento por estar fora, so acontece com odis elementos 
+
+exemplo
+{c,{b,b,c,b,c},c} = {{b,c}c} =(c,b)
+
+exercicio:
+
+a) f(A,B) = A ∩ B
+	f({1,2,3},{3,1}) = {1,3}
+
+b) f(a,b,c) = (a U b) ∩ c
+	f({1},{2},{3}) =  (1 U 2)∩ 3
+	f({1},{2},{3}) = {}
+
+c) f(x,a) = a U {x}
+	f({2},{1,3}) = a U {x}
+	f({2},{1,3}) = {1,3} U {2}
+	f({2},{1,3}) = {1,2,3}
+
+d) f(x,y) = {x + y}
+	f({2},{3}) = {5}
+
+
+==================================================================================================
+
+algebra abstrata
+propriedades:
+
+1)a,b ∈ A -> a.b ∈ A 
+	(totalidade)/ Magma
+
+2)a,b,c ∈ A -> (a.b).c = a.(b.c)
+	(associatividade) / Semi-Grupo
+
+3)∃ e ∈ A(∀ a ∈ A (e.a = a.e = a)) 
+	(Neutralidade)/ monoide
+
+4)∀a ∈ A(∃b ∈A(a.b = b.a = e))
+	(inversabilidade) / grupo
+
+
+==================================================================================================
+Funções sobrejetoras:
+é quando cobre todas as possibilidades, ou seja nao deixa nenhum ponto sobrando, e o contradominio tem que ser menor ou igual ao dominio
+
+Função injetora
+é quando nao cobre todas as possibilidades, o contradominio tem que ser maior ou igual o dominio
+
+Função bijetora
+é quando a funcao e injetora e sobrejetora, na qual temos a mesma quantidade de pontos no dominio e contradominio
+
+===================================================================================================
+
+N≡Z
+Para os impares =  (n = n+1/2)
+Para os pares = (-(n=n+1/2))
+
+N≡N^2
+0,0	1,0	1,1	2,0	2,1	2,2	3,0
+ ↑	 ↑	 ↑	 ↑	 ↑	 ↑	 ↑
+ 0	 1	 2	 3	 4	 5	 6
+
+Teorema da indução:
+1 + 2 + 3 + 4 +...+ n?
+(n^2+n)/2
+
+Geometria computacional:
+Vetor:
+Polígonos (fundamental para computação gráfica):polígono convexo: 
+
+===================================================================================================
+
+
+f(m) e O(g(m))
+f(m)<=k.g(m)
+

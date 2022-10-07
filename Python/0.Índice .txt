@@ -1,0 +1,17 @@
+índice
+conteúdo = arquivo
+
+
+2.
+	2.0 lista = lista
+	(https://www.hashtagtreinamentos.com/listas-no-python?gclid=EAIaIQobChMItNGKs6_a-QIVGMLCBB3p-QfGEAAYASAAEgI3QvD_BwE)
+	2.1 Tupla = Tupla
+	https://www.hashtagtreinamentos.com/tuplas-no-python?gclid=EAIaIQobChMI78Xm1LLa-QIV4w-tBh2P2giqEAAYASAAEgIr4_D_BwE
+	2.2 for = Tupla 
+	2.3 dicionario = dicionario
+	https://www.hashtagtreinamentos.com/dicionarios-em-python?gclid=EAIaIQobChMI-b308bfa-QIVCu6RCh1VAQUFEAAYASAAEgKSzvD_BwE
+	2.4 Condição = condicao
+	https://www.hashtagtreinamentos.com/estruturas-de-repeticao-python?gclid=Cj0KCQjw0oyYBhDGARIsAMZEuMum5KpemKEv7G3kbWikEisxigMEb8Mlshl1x2uHF2eJkxbDGNTVPVYaAlYEEALw_wcB
+	
+
+	

@@ -1,0 +1,107 @@
+Sistema de versionamento
+
+
+
+serve para escrever versões do codigo sem sobreescrever a versão antiga do mesmo
+
+
+
+	#######  ######  ######
+	   #     #       #
+	   #     ######  ######
+	   #     #            #
+	   #     #       ######
+
+TFS (Team Foundation Server)
+
+- TFS version control
+- visual studio online
+- visual studio team service
+- azure devops
+
+GIT vs TFVC
+
+TFVC 
+	- centralizado
+		- repositorio -> Server
+GIT
+	- Distribuido
+		- repositorio -> Push -> server
+			- vai gerando comits para possiveis modificações
+
+GIT e GitHub:
+	Github é o servidor (concorrente do azure) movido pelo GIT
+
+
+
+
+########################################################################################################################################################################################################
+
+download Git engine:
+https://git-scm.com/downloads
+
+
+(Usando git Bash )
+	- pode-se usar tanto comandos windows quanto linux
+	- no CMD do windows somente comando windows
+
+
+	pode-se usar um repositorio git sem mesmo usar o servidor gir, como por exemplor qunado voce quiser criar versoes do codigos no local.
+
+
+######## comandos: #######
+
+
+mkdir nycollas 				// cria um diretorio 'nycollas'
+
+cd nycollas 				// entra na pasta
+cd ..                // Nivel acima (pasta anterior)
+
+
+git version 				// versao do git
+
+git init 				// diz para o git que aquela pasta e o repositorio, e ele vai criar uma 						pasta oculta dentro da pasta principal("Nycollas").
+
+
+git status 				// mostra como ta o repositorio
+
+git add arquivo.txt 			// o item 'arquivo.txt' passa a ser gerenciado pelo git
+
+git add .				// adiciona todos os itens que nao foram adicionados
+
+git commit -m "primeiro commit"		// faz um comit do arquivo (-m é mensagem para vvoce lembrar o que foi 						feito) ele funciona como um CheckPoint
+
+
+git config --global user.name "Your name" //global para ele usar o mesmo nick para a maquina toda, e local somente 	  						para aquele repositorio 
+dit config --global user.email "email"
+
+
+
+					//se eu alterar o documento, em seguida dar um 'git status' ele vai mostrar 						que o arquivo foi alterado e nao comitado
+
+					//sempre que for commitar em txt quando for incluir uma linha nova, tem que 						adicionar o arquivo novamente 
+
+git commit -a				// Abre um TXT para voce nomear o commit 
+
+
+git log 				// mostra o historico de alterações
+    git log --oneline  //  tudo em uma linha 
+
+git reset head~1			//
+
+
+git log -p            //
+
+
+############################################################################################################
+
+git remote add local  // 
+
+
+// dentro da pasta main (aonde esta meu repositorio )
+
+// vamos clonar a pasta principal para server
+
+/copia-se o caminho(link) da pasta main e dentro da pasta 'server' damos o seguinte comando:
+
+git clone /c/Users/disrct/Desktop/Nycollas/main

@@ -1,0 +1,225 @@
+####################################   DevOps   #######################################
+
+softwares / aplicaçoes
+	console
+	desktop
+	IOT
+	Site
+	Aplicação Web
+	Aplicativo
+___________________________________________________________________________________________________
+
+Servidores
+
+	é um computador normalmente mais potente do que os domesticos, pois precisa de maior processamento, armazenamento e compartilhamento
+exemplo de uso
+	hospedagem de internet
+	armazenamento de arquivo local
+	fornecimento de aplicações ERP para organizações
+	serviços de email
+___________________________________________________________________________________________________
+
+Servidores Web	(Nginx, apache, cloudflare, LiteSpeed, microsoft-IIS, Node.Js...)
+	request: (http) 
+	response: (http)
+___________________________________________________________________________________________________
+
+API:
+
+	Appliication programmin interface, faz a referencia a uma interface de aplicações, que pode comunicar-se com outros sistemas.
+	Fica entre pessoas e sistemas &/OU sistemas e sistemas 
+	Padroes de mensagens: XML, JSON, YAML
+___________________________________________________________________________________________________
+
+FRAMEWORK:
+
+	modelo de boa pratica que recomendam como deve ser gerenciados os projetos, processos e demais demandas da TI.Servem para guiar o trabalho da TI, estabelecendo padroes e nortes para que a TI seja uma area cada vez mais estratégica dentro da empresa.
+SCRUM FRAMEWORK, COBIT, ITIL.(gerenciamento e gestão)
+ANGULAR, jQuery, React, Flutter, Material Design (Desenvolvimento)
+___________________________________________________________________________________________________
+
+CLOUD:
+
+	
+___________________________________________________________________________________________________
+
+O que é DevOps:
+
+
+É uma filosofia que precisa estar aderida a cultura e so e alcançada se voce adotar e incentivar 
+
+___________________________________________________________________________________________________
+
+Modelo de Desenvolvimento de Software - CASCATA:
+
+(eng. de sistemas <-> analise de requisitos <-> projeto <-> codificação <-> teste e integração <-> operação e manutenção)
+
+___________________________________________________________________________________________________
+
+feature: 
+bugfix: arruma algo que ja ta acontecendo (homologação e desenvolvimento),(correção)
+hotfix: arruma algo que ja ta em produção (ja esta com o cliente)
+
+___________________________________________________________________________________________________
+
+modelo de desenvolvimento de software - cascata
+
+fase de definição : 
+	analise/definiçao do projeto (fronteiras do sistemas, incluindo hardware, pessoas, etc.)
+	planejamento projeto (Ricos, Recursos, custos)
+	analise requisitos;
+
+Fase de desenvolvimento 
+	Projeto de Software(analise tecnica, UML, arquitetura)
+	codificação
+	testes
+
+Fase de manutenção:
+	Manutenção corretiva (Bugs);
+	Manutenção adaptiva (adaptar software a mudancas de ambiente: hardware, SO, atualização de componentes)
+	Manitenção Perfectiva (melhorias)
+
+
+___________________________________________________________________________________________________
+
+
+Entao o que e DevOps?
+
+O movimento começou a tomar forma entre 2007 2008, quando as operações de TI e as comunidades de desenvolvimento de software passaram a expressar o que acreditavam ser um nivel fatal de disfuncionalidade no setor 
+
+
+___________________________________________________________________________________________________
+
+
+arquitetura von newman
+
+
+Infraestrutura como codigo (IaC)
+	VAGRANT - ferramenta para IaC (opensurce) : faz a configuração da virtual machine antes que ela inicie para nao ter que configurar manualmente toda vez que for rodar a maquina.
+	Hyper-v (virtual machine)
+
+
+provisionar (provisioning): 
+	para instalar coisas na maquina virtual, voce provisiona uma ferramenta dentro da IaC por comandos... exemplo
+
+		config.vm.provision "shell",
+			inline: "apt-get update && apt-get install -y mysql-server-5.7"
+
+
+Multi-Machine:
+	- iniciando mais de uma maquina virtual;
+____________________________________________________________________________________________________
+
+#################  Virtual Machine  ####################
+
+- Maquinas independentes dentro de um SO
+
+
+
+
+#################  Container  ####################
+
+- Mais leve 
+- Menos custoso
+- Sobe mais rapido
+- Usa S.O principal e nao um secundario
+- Cria um ambiente separado dentro no S.O principal
+
+### Ferramenta
+- Docker (especifico de containers2)
+
+Exemplo
+{
+- Hardware
+	- Sistema Operacional
+		-Container 1
+			- Dependencias
+				- Aplicação 1 (C#)
+		-Container 2
+			- Dependencias
+				- Aplicação 2 (PHP)
+		-Container 3
+			- Dependencias
+				- Aplicação 3 ()
+}
+
+### Criando containers
+
+dockerfile
+	-> Build
+	 = imagem
+		-> Run 
+		= Container
+
+
+
+
+### Code: // instalando o note versao 14 em um diretorio 'app-node', rodando e startando.
+
+{
+FROM node:14
+WORKDIR / app-node
+COPY ..
+RUN npm install
+ENTRYPOINT npm start
+}
+
+####################################################################################################
+
+docker swarm pesquisa
+
+
+
+####################################################################################################
+
+
+REVISÃO:
+DevOps
+- Filosofia
+- Práticas + Ferramentas 
+		- Pipeline (azure)
+
+NAO É
+- metodologia (Ele USA metodologia (agil (normalmente scrum)))
+- ferramenta
+- linguagem
+
+práticas (Conceitos)
+	- C.D : Continous Delivery / Deploy (entrega continua)
+	- C.I : Continous integration	    (Integração Continua)
+
+####################################################################################################
+
+
+#####################  sistema de versionamento   #####################
+
+
+serve para escrever versões do codigo sem sobreescrever a versão antiga do mesmo
+
+
+
+	#######  ######  ######
+	   #     #       #
+	   #     ######  ######
+	   #     #            #
+	   #     #       ######
+
+TFS (Team Foundation Server)
+
+- TFS version control
+- visual studio online
+- visual studio team service
+- azure devops
+
+GIT vs TFVC
+
+TFVC 
+	- centralizado
+		- repositorio -> Server
+GIT
+	- Distribuido
+		- repositorio -> Push -> server
+			- vai gerando comits para possiveis modificações
+
+GIT e GitHub:
+	

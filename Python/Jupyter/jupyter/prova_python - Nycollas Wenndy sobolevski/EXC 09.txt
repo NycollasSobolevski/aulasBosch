@@ -1,0 +1,8 @@
+no começo ele importa a biblioteca 'numpy' como 'np'
+
+ele declara a variavel 'array' oara gerar um numero inteiro aleatorio de 0 a 10 com o tamanho de 5x5ou seja, uma matrix de 5x5
+mostra a matriz (array)
+
+depois aplica uma outra variavel('condition') na qual diz que so quer numero impar vai ser multiplicado por ele mesmo(ou seja ao seu quadrado)
+finaliza mostrando o resultado
+

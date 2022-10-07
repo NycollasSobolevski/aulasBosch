@@ -1,0 +1,16 @@
+random word
+dificuldade 01 = 4 letras
+dificuldade 02 = 6 letras
+dificuldade 03 = 8 letras
+
+6 palavras de cada dificuldade	
+
+
+escolher pontuação perdida
+escolher dificuldade
+
+ler as palavrasdo txt
+
+
+
+
